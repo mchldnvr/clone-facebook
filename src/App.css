@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  max-width: 980px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.title {
+  color: #1877f2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.left p {
+  font-size: 1.5rem;
+  color: #1c1e21;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 396px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin: 6px 0;
+  border: 1px solid #ccd0d5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #1c1e21;
+}
+
+.input-field::placeholder {
+  color: #606770;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.login-button:hover {
+  background-color: #166fe5;
+}
+
+.forgot-password {
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.create-account {
+  width: 100%;
+  padding: 14px;
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.create-account:hover {
+  background-color: #36a420;
+}
+
+.create-page {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  text-align: center;
+  color: #606770;
+}
+
+.create-page strong {
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left, .right {
+    max-width: 100%;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+}
